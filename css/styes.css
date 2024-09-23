@@ -1,0 +1,16 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    /*background: url('') no-repeat center center; COLOCAR UNA IMAGEN DE FONDO PARA EL TITULO*/
+    background-size: cover;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+ul.list-group li {
+    font-size: 1.2rem;
+}
