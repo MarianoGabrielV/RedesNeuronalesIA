@@ -14,3 +14,8 @@ h1, h2 {
 ul.list-group li {
     font-size: 1.2rem;
 }
+
+/*variable azul para probasr hit*/
+:root {
+    --azul: #407BFF; 
+}
