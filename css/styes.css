@@ -1,5 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
+    background-image: url(/redes-neuronales.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
 }
 
 header {
@@ -15,7 +21,7 @@ ul.list-group li {
     font-size: 1.2rem;
 }
 
-/*variable azul para probasr hit*/
+/*variable azul para probasr hit*/g
 :root {
     --azul: #407BFF; 
 }
