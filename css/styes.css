@@ -9,8 +9,9 @@ body {
 }
 /* se agrego imagen*/
 header {
-    /*background: url('') no-repeat center center; COLOCAR UNA IMAGEN DE FONDO PARA EL TITULO*/
+    background: url('/img/GettyImages-973897010.webp') no-repeat center center;  
     background-size: cover;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -20,6 +21,23 @@ h1, h2 {
 ul.list-group li {
     font-size: 1.2rem;
 }
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+#titulo{
+    color: gold;
+}
+#parrafo{
+    color: #407BFF;
+
+  }
 
 /*variable azul para probasr hit*/
 :root {
