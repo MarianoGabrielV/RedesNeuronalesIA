@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(/redes-neuronales.png);
+    /*background-image: url(/redes-neuronales.png);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@ body {
 }
 /* se agrego imagen*/
 header {
-    background: url('/img/GettyImages-973897010.webp') no-repeat center center;  
+    background: url('/img/prueba2.gif') no-repeat center center; 
     background-size: cover;
     height: 100vh;
 }
@@ -32,7 +32,7 @@ ul.list-group li {
     font-style: normal;
   }
 #titulo{
-    color: gold;
+    color: rgb(42, 241, 52);
 }
 #parrafo{
     color: #407BFF;
