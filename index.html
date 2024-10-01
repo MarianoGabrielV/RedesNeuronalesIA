@@ -11,9 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Comentario-->
+   
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand audiowide-regular"" href="#">Redes Neuronales</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,6 +59,10 @@
                 A partir del año 2006, se introdujeron las Deep Belief Networks (DBN) por Hinton, que demostraron que se podían entrenar redes profundas de manera efectiva. En 2014, las Generative Adversarial Networks (GAN), creadas por Ian Goodfellow, marcaron otro avance significativo en la creación de modelos generativos.
                 
                 En resumen, el desarrollo de las redes neuronales ha pasado por varias etapas, desde los primeros modelos matemáticos en los años 1940, hasta los modernos modelos de deep learning que se utilizan en la actualidad para aplicaciones avanzadas como la visión por computadora y el procesamiento de lenguaje natural​</p>
+                <h2 class="text-center">Video para reforzar contenidos.</h2>
+                <div class="video-container text-center mt-4">                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SV3gIFChXvg?si=Kg3Mh5eYN7HYVVwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
         </div>
     </section>
 
@@ -70,18 +74,54 @@
                 <div class="col-md-4">
                     <h3>Redes Neuronales Convolucionales (CNNs)</h3>
                     <p>Estas redes son utilizadas principalmente en el reconocimiento de imágenes y videos. Se caracterizan por tener capas que aplican filtros específicos sobre las imágenes para detectar patrones o características visuales como bordes y texturas. CNNs son utilizadas en sistemas de visión artificial como la clasificación de objetos, detección de rostros y reconocimiento de escritura. Ejemplos de uso incluyen aplicaciones en automóviles autónomos y diagnóstico médico mediante imágenes de resonancias magnéticas​</p>
+                    <img src="img/redesConvulcionales.png" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen1" style="cursor: pointer;">
                 </div>
                 <div class="col-md-4">
                     <h3>Redes Neuronales Recurrentes (RNNs)</h3>
                     <p> Este tipo de red neuronal es ideal para tareas que involucran secuencias de datos, como el procesamiento de lenguaje natural y la traducción automática. Las RNNs tienen una "memoria" que les permite retener información de entradas anteriores, lo que las hace adecuadas para tareas que requieren la comprensión del contexto temporal, como la predicción de series de tiempo o el análisis de texto en chatbots</p>
+                    <img src="img/recurrentes.jpg" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen2" style="cursor: pointer;">
                 </div>
                 <div class="col-md-4">
                     <h3>Redes Neuronales Multicapa (MLP)</h3>
                     <p> Son redes más comunes y se componen de varias capas de neuronas conectadas. Se utilizan en una amplia gama de aplicaciones, incluyendo el reconocimiento de patrones, la predicción de datos y la clasificación. Estas redes son muy útiles en problemas como la predicción de precios de mercado o clasificación de clientes según sus hábitos de compra</p>
+                    <img src="img/multicapa.jpg" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen3" style="cursor: pointer;">
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modales para cada imagen -->
+<!-- Modal para la primera imagen -->
+<div class="modal fade" id="modalImagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/redesConvulcionales.png" alt="CNNs" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la segunda imagen -->
+<div class="modal fade" id="modalImagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/recurrentes.jpg" alt="RNNs" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la tercera imagen -->
+<div class="modal fade" id="modalImagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/multicapa.jpg" alt="MLPs" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Sección Características -->
     <section id="caracteristicas" class="py-5">
