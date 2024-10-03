@@ -81,7 +81,8 @@ header {
 .sec p {
     font-size: 1em;
     color: #fff;
-    font-weight: 300p;
+    font-weight: 300;
+    margin-bottom: 8%;
 }
 
 .middle-header {
