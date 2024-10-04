@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +30,12 @@ header {
     color: #fff;
     font-size: 2em;
     cursor: default;
+    font-family: 'Audiowide', sans-serif;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar a {
@@ -38,6 +45,7 @@ header {
    font-weight: 600;
    padding: 6px 15px;
    border-radius: 20px;
+   font-family: 'Audiowide', sans-serif;
 }
 
 .navbar a:hover,
