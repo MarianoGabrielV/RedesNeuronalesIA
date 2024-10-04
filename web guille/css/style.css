@@ -83,6 +83,7 @@ header {
     color: #fff;
     font-weight: 300;
     margin-bottom: 8%;
+    text-align: justify;
 }
 
 .middle-header {
@@ -322,4 +323,12 @@ header {
 
   html {
     scroll-behavior: smooth;
+}
+
+.titulo-ejemplo h3{
+  margin-top: 5%;
+}
+
+.texto-caracteristicas {
+  text-align: justify;
 }
