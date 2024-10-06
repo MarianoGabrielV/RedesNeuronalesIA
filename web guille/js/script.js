@@ -33,3 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
         target.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// codigo de las imagenes para que se agranden.
+function openFullscreen(image) {
+    if (image.requestFullscreen) {
+        image.requestFullscreen();
+    } else if (image.mozRequestFullScreen) { 
+        image.mozRequestFullScreen();
+    } else if (image.webkitRequestFullscreen) {
+        image.webkitRequestFullscreen();
+    } else if (image.msRequestFullscreen) { 
+        image.msRequestFullscreen();
+    }
+}
+

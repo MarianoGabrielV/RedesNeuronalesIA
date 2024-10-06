@@ -67,7 +67,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;   
+    pointer-events: none; 
+      
 }
 
 .sec {
@@ -340,3 +341,63 @@ header {
 .texto-caracteristicas {
   text-align: justify;
 }
+
+/*IMAGENES.*/
+.img-equal-height {
+  height: 200px; 
+  object-fit: cover;
+}
+
+
+
+img:fullscreen {
+  object-fit: contain;
+  width: 100vw; 
+}
+
+img:-webkit-full-screen { 
+  width: 100vw;
+  height: 100vh;
+}
+
+img:-moz-full-screen { 
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*tamañoDeFuente*/
+#tamañoDeFuente {
+  font-size: 20px; /* Cambia el valor según el tamaño que desees */
+}
+
+
+/* NuevaLetraParaParrafos.*/
+
+.montserrat-parrafo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* peso negrita */
+  font-style: normal;
+}
+
+#historia h2, #ejemplos h2, h3, #caracteristicas h2, #aplicaciones h2{
+  color: #00a3b9; ;
+}
+
+
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-bg);
+  border: var(--bs-list-group-border-width) solid #00a3b9;}

@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth; 
@@ -31,7 +34,10 @@
             <a href="#aplicaciones">Aplicaciones</a>
             <a href="#preguntas">Preguntas</a>
         </nav>
+        
     </header>
+    
+    
 
     <section class="parallax">
         <video src="img/video.mp4" id="video" loop autoplay muted ></video>
@@ -45,17 +51,17 @@
 
             <section id="historia" class="py-5 ">
                 <div class="container">
-                    <h2 class="text-center audiowide-regular">Historia</h2>
-                    <p class="text-center">La historia de las redes neuronales tiene sus raíces en los años 1940, cuando el neurofisiólogo Warren McCulloch y el matemático Walter Pitts desarrollaron el primer modelo matemático que simulaba una neurona artificial, conocido como la neurona de McCulloch-Pitts. Este modelo era muy básico y no lograba capturar la complejidad de las redes neuronales biológicas, pero sentó las bases para investigaciones futuras.
+                    <h2 class="text-center audiowide-regular">Historia</h2><br>
+                    <p class="text-center montserrat-parrafo " id="tamañoDeFuente">La historia de las redes neuronales tiene sus raíces en los años 1940, cuando el neurofisiólogo Warren McCulloch y el matemático Walter Pitts desarrollaron el primer modelo matemático que simulaba una neurona artificial, conocido como la neurona de McCulloch-Pitts.<br><br> Este modelo era muy básico y no lograba capturar la complejidad de las redes neuronales biológicas, pero sentó las bases para investigaciones futuras.
         
-                        Durante las décadas de 1950 y 1960, se desarrollaron otros modelos importantes, como el perceptrón de Frank Rosenblatt en 1958, una red neuronal simple que podía aprender a clasificar patrones. Sin embargo, las limitaciones de estos primeros modelos, como la incapacidad del perceptrón para resolver problemas no lineales, llevaron a un periodo de desinterés en las redes neuronales conocido como el "invierno de la inteligencia artificial" en los años 1970.
+                        <br> <br>Durante las décadas de 1950 y 1960, se desarrollaron otros modelos importantes, como el perceptrón de Frank Rosenblatt en 1958, una red neuronal simple que podía aprender a clasificar patrones. Sin embargo, las limitaciones de estos primeros modelos, como la incapacidad del perceptrón para resolver problemas no lineales, llevaron a un periodo de desinterés en las redes neuronales conocido como el "invierno de la inteligencia artificial" en los años 1970.
                         
-                        La situación cambió en los años 1980, cuando Geoffrey Hinton y otros investigadores reintrodujeron el concepto de retropropagación del error (backpropagation), una técnica que permitió entrenar redes neuronales con múltiples capas. Esto marcó el renacimiento del interés en las redes neuronales, llevando eventualmente al desarrollo del deep learning.
+                        <br><br>La situación cambió en los años 1980, cuando Geoffrey Hinton y otros investigadores reintrodujeron el concepto de retropropagación del error (backpropagation), una técnica que permitió entrenar redes neuronales con múltiples capas. Esto marcó el renacimiento del interés en las redes neuronales, llevando eventualmente al desarrollo del deep learning.
                         
-                        A partir del año 2006, se introdujeron las Deep Belief Networks (DBN) por Hinton, que demostraron que se podían entrenar redes profundas de manera efectiva. En 2014, las Generative Adversarial Networks (GAN), creadas por Ian Goodfellow, marcaron otro avance significativo en la creación de modelos generativos.
+                        <br><br>A partir del año 2006, se introdujeron las Deep Belief Networks (DBN) por Hinton, que demostraron que se podían entrenar redes profundas de manera efectiva. En 2014, las Generative Adversarial Networks (GAN), creadas por Ian Goodfellow, marcaron otro avance significativo en la creación de modelos generativos.
                         
-                        En resumen, el desarrollo de las redes neuronales ha pasado por varias etapas, desde los primeros modelos matemáticos en los años 1940, hasta los modernos modelos de deep learning que se utilizan en la actualidad para aplicaciones avanzadas como la visión por computadora y el procesamiento de lenguaje natural​</p>
-                        <h2 class="text-center audiowide-regular">Video para reforzar contenidos.</h2>
+                        <br><br>En resumen, el desarrollo de las redes neuronales ha pasado por varias etapas, desde los primeros modelos matemáticos en los años 1940, hasta los modernos modelos de deep learning que se utilizan en la actualidad para aplicaciones avanzadas como la visión por computadora y el procesamiento de lenguaje natural.</p>
+                        <h2 class="text-center audiowide-regular">Video para reforzar contenidos.</h2><br>
                         <div class="video-container text-center mt-4">                   
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/SV3gIFChXvg?si=Kg3Mh5eYN7HYVVwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
@@ -64,23 +70,22 @@
             <section id="ejemplos" class="py-5 bg-black border border-1 border-white">
                 <div class="container">
                     <h2 class="text-center audiowide-regular">Ejemplos de Redes Neuronales</h2>
-                    <br>
-                    <br>
+                    <br><br>
                     <div class="row text-center">
-                        <div class="col-md-4 text-white">
-                            <h3>Redes Neuronales Convolucionales (CNNs)</h3><br>
-                            <p>Estas redes son utilizadas principalmente en el reconocimiento de imágenes y videos. Se caracterizan por tener capas que aplican filtros específicos sobre las imágenes para detectar patrones o características visuales como bordes y texturas. CNNs son utilizadas en sistemas de visión artificial como la clasificación de objetos, detección de rostros y reconocimiento de escritura. Ejemplos de uso incluyen aplicaciones en automóviles autónomos y diagnóstico médico mediante imágenes de resonancias magnéticas​</p>
-                            <img src="img/redesConvulcionales.png" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen1" style="cursor: pointer;">
+                        <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                            <h3 class="montserrat-bold">Redes Neuronales Convolucionales (CNNs)</h3><br>
+                            <p class="montserrat-parrafo">Estas redes son utilizadas principalmente en el reconocimiento de imágenes y videos. Se caracterizan por tener capas que aplican filtros específicos sobre las imágenes para detectar patrones o características visuales como bordes y texturas. CNNs son utilizadas en sistemas de visión artificial como la clasificación de objetos, detección de rostros y reconocimiento de escritura. Ejemplos de uso incluyen aplicaciones en automóviles autónomos y diagnóstico médico mediante imágenes de resonancias magnéticas.</p>
+                            <img src="img/redesConvulcionales.png" alt="CNNs" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                         </div>
-                        <div class="col-md-4 text-white">
-                            <h3>Redes Neuronales Recurrentes (RNNs)</h3><br>
-                            <p> Este tipo de red neuronal es ideal para tareas que involucran secuencias de datos, como el procesamiento de lenguaje natural y la traducción automática. Las RNNs tienen una "memoria" que les permite retener información de entradas anteriores, lo que las hace adecuadas para tareas que requieren la comprensión del contexto temporal, como la predicción de series de tiempo o el análisis de texto en chatbots</p>
-                            <img src="img/recurrentes.jpg" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen2" style="cursor: pointer;">
+                        <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                            <h3 class="montserrat-bold">Redes Neuronales Recurrentes (RNNs)</h3><br>
+                            <p class="montserrat-parrafo">Este tipo de red neuronal es ideal para tareas que involucran secuencias de datos, como el procesamiento de lenguaje natural y la traducción automática. Las RNNs tienen una "memoria" que les permite retener información de entradas anteriores, lo que las hace adecuadas para tareas que requieren la comprensión del contexto temporal, como la predicción de series de tiempo o el análisis de texto en chatbots.</p> <br><br>
+                            <img src="img/recurrentes.jpg" alt="RNNs" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                         </div>
-                        <div class="col-md-4 text-white">
-                            <h3>Redes Neuronales Multicapa (MLP)</h3><br>
-                            <p> Son redes más comunes y se componen de varias capas de neuronas conectadas. Se utilizan en una amplia gama de aplicaciones, incluyendo el reconocimiento de patrones, la predicción de datos y la clasificación. Estas redes son muy útiles en problemas como la predicción de precios de mercado o clasificación de clientes según sus hábitos de compra</p>
-                            <img src="img/multicapa.jpg" alt="CNNs" class="img-fluid mt-3" data-bs-toggle="modal" data-bs-target="#modalImagen3" style="cursor: pointer;">
+                        <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                            <h3 class="montserrat-bold">Redes Neuronales Multicapa (MLP)</h3><br>
+                            <p class="montserrat-parrafo"> Son redes más comunes y se componen de varias capas de neuronas conectadas. Se utilizan en una amplia gama de aplicaciones, incluyendo el reconocimiento de patrones, la predicción de datos y la clasificación. Estas redes son muy útiles en problemas como la predicción de precios de mercado o clasificación de clientes según sus hábitos de compra.</p><br><br><br>
+                            <img src="img/multicapa.jpg" alt="MLPs" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                         </div>
                     </div>
                 </div>
