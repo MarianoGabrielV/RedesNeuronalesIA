@@ -27,11 +27,12 @@
     <header>
         <h2 class="logo">Inteligencia Artificial</h2>
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
             <a href="#historia">Historia</a>
-            <a href="#ejemplos">Ejemplos</a>
+            <a href="#entrenamiento">Entrenamiento</a>
+            <a href="#tipos">Tipos</a>
             <a href="#caracteristicas">Características</a>
             <a href="#aplicaciones">Aplicaciones</a>
+            <a href="#desafios">Desafios</a>
             <a href="#preguntas">Preguntas</a>
         </nav>
         
@@ -67,18 +68,33 @@
                         </div>
                 </div>
             </section>
-            <section id="ejemplos" class="py-5 bg-black border border-1 border-white">
+            <section id="entrenamiento" class="py-5 bg-black border border-1 border-white ">
                 <div class="container">
-                    <h2 class="text-center audiowide-regular">Ejemplos de Redes Neuronales</h2>
+                    <h2 class="text-center audiowide-regular">Entrenamiento de una Red Neuronal</h2><br>
+                    <p class="text-center montserrat-parrafo " id="tamañoDeFuente">El entrenamiento de una red neuronal implica ajustar los pesos que conectan las neuronas. Durante el entrenamiento, la red procesa un conjunto de datos de entrenamiento, ajustando sus pesos en función del error que comete en las predicciones. Los pasos fundamentales en el proceso de entrenamiento son:
+        
+                        <br> <br><strong class="texto-mas">1)</strong><strong class="texto-grande"><u>Propagación hacia adelante (Forward Propagation): </u></strong> Los datos pasan desde la capa de entrada hasta la capa de salida, calculando la predicción de la red.
+                        
+                        <br><br><strong class="texto-mas">2)</strong><strong class="texto-grande"><u>Cálculo del Error:</u></strong> El error entre la predicción de la red y el valor real (ground truth) se calcula usando una función de costo o pérdida, como el error cuadrático medio o la entropía cruzada.
+                        
+                        <br><br><strong class="texto-mas">3)</strong><strong class="texto-grande"><u>Retropropagación del Error (Backpropagation):</u></strong> El error se propaga hacia atrás a través de la red, ajustando los pesos de las neuronas mediante técnicas de optimización, como el descenso de gradiente (gradient descent).
+                        
+                        <br><br><strong class="texto-mas">4)</strong><strong class="texto-grande"><u>Actualización de Pesos:</u></strong> Los pesos se ajustan para minimizar la función de error, y este proceso se repite en múltiples iteraciones o épocas hasta que el error es lo suficientemente bajo o se alcanza un umbral de convergencia.</p>
+                </div>
+            </section>
+            <br><br>
+            <section id="tipos" class="py-5 bg-black border border-1 border-white">
+                <div class="container">
+                    <h2 class="text-center audiowide-regular">Tipos de Redes Neuronales</h2>
                     <br><br>
                     <div class="row text-center">
                         <div class="col-md-4 text-white d-flex flex-column align-items-center">
-                            <h3 class="montserrat-bold">Redes Neuronales Convolucionales (CNNs)</h3><br>
+                            <h3 class="montserrat-bold">Redes Neuronales Convolucionales (CNN)</h3><br>
                             <p class="montserrat-parrafo">Estas redes son utilizadas principalmente en el reconocimiento de imágenes y videos. Se caracterizan por tener capas que aplican filtros específicos sobre las imágenes para detectar patrones o características visuales como bordes y texturas. CNNs son utilizadas en sistemas de visión artificial como la clasificación de objetos, detección de rostros y reconocimiento de escritura. Ejemplos de uso incluyen aplicaciones en automóviles autónomos y diagnóstico médico mediante imágenes de resonancias magnéticas.</p>
                             <img src="img/redesConvulcionales.png" alt="CNNs" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                         </div>
                         <div class="col-md-4 text-white d-flex flex-column align-items-center">
-                            <h3 class="montserrat-bold">Redes Neuronales Recurrentes (RNNs)</h3><br>
+                            <h3 class="montserrat-bold">Redes Neuronales Recurrentes (RNN)</h3><br>
                             <p class="montserrat-parrafo">Este tipo de red neuronal es ideal para tareas que involucran secuencias de datos, como el procesamiento de lenguaje natural y la traducción automática. Las RNNs tienen una "memoria" que les permite retener información de entradas anteriores, lo que las hace adecuadas para tareas que requieren la comprensión del contexto temporal, como la predicción de series de tiempo o el análisis de texto en chatbots.</p> <br><br>
                             <img src="img/recurrentes.jpg" alt="RNNs" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                         </div>
@@ -125,41 +141,95 @@
         </div>
         
         <!-- Sección Características -->
-        <section id="caracteristicas" class="py-5 text-white border border-1 border-white" >
+        <section id="caracteristicas" class="py-5 border border-1 border-white" >
             <div class="container">
-                <h2 class="text-center audiowide-regular">Características</h2>
+                <h2 class="text-center audiowide-regular">Características Clave</h2>
                 <br>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item bg-black text-white texto-caracteristicas">Capacidad de aprendizaje y adaptación: Las RNAs pueden aprender de grandes volúmenes de datos y mejorar sus predicciones a medida que reciben más información. A través de procesos de entrenamiento como la retropropagación, ajustan sus parámetros internos para minimizar los errores en las predicciones​</li>
-                    <li class="list-group-item bg-black text-white texto-caracteristicas">Reconocimiento de patrones complejos: Las redes neuronales son muy eficientes en la identificación de patrones complejos en los datos, lo que las hace ideales para tareas como la clasificación de imágenes, el procesamiento de lenguaje natural, y la predicción de series temporales​</li>
-                    <li class="list-group-item bg-black text-white texto-caracteristicas">Capacidad de generalización: Una vez entrenadas adecuadamente, las redes neuronales son capaces de generalizar el conocimiento adquirido y aplicar soluciones a nuevos datos no vistos, lo que es fundamental en aplicaciones como la predicción de mercados financieros y el diagnóstico médico​</li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas">Modelos informaticos compuestas por nodos simulado neuronas como un cerebro Humano.​</li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas"><strong class="texto-grande"><u>Capacidad de aprendizaje y adaptación:</u></strong> Las Redes Nueronales pueden aprender de grandes volúmenes de datos y mejorar sus predicciones a medida que reciben más información. A través de procesos de entrenamiento como la retropropagación, ajustan sus parámetros internos para minimizar los errores en las predicciones​.</li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas"><strong class="texto-grande"><u>Reconocimiento de patrones complejos:</u></strong> Las redes neuronales son muy eficientes en la identificación de patrones complejos en los datos.</li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas"><strong class="texto-grande"><u>Capacidad de generalización:</u></strong> Una vez entrenadas adecuadamente, las redes neuronales son capaces de generalizar el conocimiento adquirido y aplicar soluciones a nuevos datos no vistos, lo que es fundamental en aplicaciones como la predicción de mercados financieros y el diagnóstico médico.​</li>
                 </ul>
             </div>
             
         </section>
         <br><br>
-        <!-- Sección Aplicaciones -->
         <section id="aplicaciones" class="py-5 bg-black border border-1 border-white">
             <div class="container">
                 <h2 class="text-center audiowide-regular">Aplicaciones</h2>
                 <br>
                 <div class="row text-center">
-                    <div class="col-md-4 text-white">
-                        <h3>APP 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iste maiores possimus nihil voluptatem quae repudiandae, blanditiis quas molestias sunt! Porro necessitatibus nobis nemo, optio dolorum reiciendis ut magnam blanditiis.</p>
+                    <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                        <h3>Reconocimiento de Imágenes y Conducción Autónoma:</h3>
+                        <p>Las redes neuronales convolucionales son la base de muchos sistemas de reconocimiento facial, clasificación de imágenes médicas y análisis de videos. tambien es utilizado para la conduccion autonoma ya que permiten que los vehículos autónomos reconozcan y respondan a su entorno utilizan redes neuronales para interpretar datos visuales en tiempo real</p>
+                        <img src="img/reconocimientoimg.jpg" alt="reco" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
-                    <div class="col-md-4 text-white">
-                        <h3>APP 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut neque laborum voluptas iusto beatae inventore nesciunt, cupiditate animi enim blanditiis unde accusamus at quo molestias esse corrupti? Aperiam, id sit.</p>
+                    <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                        <h3>Algoritmos de Recomendación:</h3>
+                        <p>Plataformas como Netflix,Amazon,Spotify,etc utilizan redes neuronales para predecir las preferencias de los usuarios y recomendar contenido personalizado.</p>
+                        <img src="img/recomendacion.png" alt="recomen" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
-                    <div class="col-md-4 text-white">
-                        <h3>APP 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cum, facilis iusto eligendi tempore inventore nesciunt nisi facere ab qui in excepturi quas itaque, nulla consectetur, magnam quaerat odit debitis.</p>
+                    <div class="col-md-4 text-white d-flex flex-column align-items-center">
+                        <h3>Traducción automática Procesamiento del Lenguaje Natural (PLN):</h3>
+                        <p>Por medio del Procesamiento del Lenguaje Natural (PLN), las redes neuronales recurrentes y transformers han mejorado enormemente la traducción automática y los asistentes virtuales </p>
+                        <img src="img/traduccion.png" alt="tradu" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
                 </div>
             </div>
         </section>
+        <br><br>
+        <!-- Modal para la primera imagen -->
+        <div class="modal fade" id="modalImagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/reconocimientoimg.jpg" alt="reco" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        <!-- Modal para la segunda imagen -->
+        <div class="modal fade" id="modalImagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/recomendacion.png" alt="rocome" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <!-- Modal para la tercera imagen -->
+        <div class="modal fade" id="modalImagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/traduccion.png" alt="tradu" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        <section id="desafios" class="py-5 border border-1 border-white" >
+            <div class="container">
+                <h2 class="text-center audiowide-regular">Desafíos y Limitaciones</h2>
+                <br>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item bg-black text-white texto-caracteristicas">
+                        <strong class="texto-grande"><u>Requieren Grandes Cantidades de Datos:</u></strong> Para obtener un rendimiento óptimo, las redes neuronales profundas suelen requerir grandes cantidades de datos etiquetados, lo que puede ser difícil de obtener en algunas aplicaciones.
+                    </li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas">
+                        <strong class="texto-grande"><u>Complejidad Computacional:</u></strong> Entrenar redes neuronales profundas es costoso en términos de recursos computacionales. Las GPUs y TPUs son esenciales para acelerar el proceso, pero también encarecen la infraestructura.
+                    </li>
+                    <li class="list-group-item bg-black text-white texto-caracteristicas">
+                        <strong class="texto-grande"><u>Opacidad (Caja Negra):</u></strong> Las redes neuronales, especialmente las redes profundas, son a menudo vistas como "cajas negras", ya que es difícil interpretar cómo y por qué toman ciertas decisiones.
+                    </li>
+                </ul>
+            </div>                
+        </section>
+
         <div class="middle-header" id="preguntas">Preguntas</div>
         <div id="question"></div>
         <div id="options"></div>
@@ -181,6 +251,13 @@
     <script src="js/preguntas5.js"></script>
     
     <script src="js/script.js"></script>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <p>&copy; 2024 UNAB. Redes Neuronales. <br>
+                <strong>Autores:</strong> Guillermo Cosentini, Mariano Vergniaud, Gonzalo Copes. <br>
+                <strong>Fuentes de información:</strong> Bishop__Pattern_Recognition_and_Machine_Learning__Springer_2006, unir.net/ingenieria/revista/redes-neuronales-artificiales/, Coursera - Neural Networks and Deep Learning</p>
+        </footer>
 </body>
 
 </html>

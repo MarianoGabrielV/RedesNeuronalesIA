@@ -1,11 +1,11 @@
 const questions2 = [
   {
-    question: "¿Qué tecnología permite a las aplicaciones interactuar con funciones y servicios estandarizados sin necesidad de conocer los detalles específicos del hardware subyacente?",
-    options: ["a) Interfaces de Programación de Aplicaciones (API).",
-              "b) Máquinas Virtuales (VM).",
-              "c) Bibliotecas de Abstracción de Hardware (HAL).",
-              "d) Ninguna de las anteriores."],
-    answer: "a"
+    question: "¿Qué técnica permitió el entrenamiento de redes neuronales con múltiples capas en los años 1980?",
+    options: ["a) Redes neuronales convolucionales.",
+              "b) Perceptrón.",
+              "c) Retropropagación del error (Backpropagation).",
+              "d) Redes neuronales recurrentes."],
+    answer: "c"
   }
 ];
 

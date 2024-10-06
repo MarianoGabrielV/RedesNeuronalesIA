@@ -1,11 +1,11 @@
 const questions3 = [
   {
-    question: "¿Qué función del sistema operativo se encarga de asignar espacio de memoria a procesos y gestionar el intercambio de datos entre la memoria principal y el almacenamiento secundario?",
-    options: ["a) Gestión de Procesos.",
-              "b) Gestión de Memoria.",
-              "c) Gestión de Archivos.",
-              "d) Servicios de Red."],
-    answer: "b"
+    question: "¿Cuál es una de las principales aplicaciones de las redes neuronales convolucionales (CNN)?",
+    options: ["a) Predicción de series de tiempo.",
+              "b) Traducción automática.",
+              "c) Reconocimiento de imágenes y videos.",
+              "d) Diagnóstico médico basado en texto."],
+    answer: "c"
   }
 ];
 

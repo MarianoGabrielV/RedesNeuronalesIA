@@ -1,11 +1,11 @@
 const questions = [
   {
-    question: "¿Cómo utiliza un sistema operativo la abstracción del hardware para gestionar recursos como la memoria y el procesador?",
-    options: ["a) Creando una copia exacta de cada componente de hardware para su uso exclusivo.",
-              "b) Implementando interfaces de programación de aplicaciones (API) específicas para cada dispositivo.",
-              "c) Mediante la creación de capas de abstracción entre las aplicaciones y el hardware físico.",
-              "d) Optimizando directamente el rendimiento del hardware para cada tarea individual."],
-    answer: "c"
+    question: "¿Quiénes desarrollaron el primer modelo matemático que simulaba una neurona artificial?",
+    options: ["a) Geoffrey Hinton y Frank Rosenblatt.",
+              "b) Warren McCulloch y Walter Pitts.",
+              "c) Ian Goodfellow y Geoffrey Hinton.",
+              "d) Frank Rosenblatt y Ian Goodfellow."],
+    answer: "b"
   }
 ];
 

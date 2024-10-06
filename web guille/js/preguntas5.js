@@ -1,10 +1,10 @@
 const questions5 = [
   {
-    question: "¿Cuál es un ejemplo de sistema operativo distribuido ampliamente utilizado para el procesamiento distribuido de grandes conjuntos de datos en entornos distribuidos?",
-    options: ["a) Apache Kafka.",
-              "b) Apache Spark.",
-              "c) Apache Hadoop.",
-              "d) Apache Tomcat."],
+    question: "¿Cuál es una limitación importante de las redes neuronales profundas?",
+    options: ["a) Requieren pocas cantidades de datos etiquetados.",
+              "b) Son fáciles de interpretar.",
+              "c) Son costosas en términos computacionales.",
+              "d) No pueden generalizar patrones complejos."],
     answer: "c"
   }
 ];

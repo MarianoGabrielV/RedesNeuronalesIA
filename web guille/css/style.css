@@ -387,11 +387,18 @@ img:-moz-full-screen {
   font-style: normal;
 }
 
-#historia h2, #ejemplos h2, h3, #caracteristicas h2, #aplicaciones h2{
+#historia h2, #tipos h2, #caracteristicas h2, #aplicaciones h2 , #entrenamiento h2 ,#desafios h2{
   color: #00a3b9; ;
 }
 
+.texto-grande {
+  font-size: 1.25rem; 
+}
 
+.texto-mas {
+  font-size: 1.35rem;
+  color: #00a3b9; 
+}
 
 .list-group-item {
   position: relative;
@@ -401,3 +408,4 @@ img:-moz-full-screen {
   text-decoration: none;
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid #00a3b9;}
+

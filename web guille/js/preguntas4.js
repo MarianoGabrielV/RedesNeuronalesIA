@@ -1,11 +1,11 @@
 const questions4 = [
   {
-    question: "¿Qué tipo de sistemas operativos están diseñados específicamente para garantizar que las tareas críticas se ejecuten en tiempos determinados y predecibles?",
-    options: ["a) Sistemas Operativos Monolíticos.",
-              "b) Sistemas de Tiempo Real.",
-              "c) Sistemas de Tiempo Compartido.",
-              "d) Sistemas Distribuidos."],
-    answer: "b"
+    question: "¿Qué red neuronal es ideal para el procesamiento de secuencias de datos?",
+    options: ["a) Redes neuronales multicapa (MLP).",
+              "b) Redes neuronales convolucionales (CNN).",
+              "c) Procesamiento del lenguaje naturak (PLN).",
+              "d) Redes neuronales recurrentes (RNN)."],
+    answer: "d"
   }
 ];
 
