@@ -430,7 +430,7 @@ img:-moz-full-screen {
 
 @media (min-width: 768px) and (max-width: 1366px) {
     .navbar a {
-      margin-left: -10px;
+      margin-left: -19px;
   }
   .logo {
     width: 31%;
