@@ -13,8 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <style>
         html {
             scroll-behavior: smooth; 
@@ -50,7 +53,7 @@
 
     <section class="sec">
 
-            <section id="historia" class="py-5 ">
+           <!-- <section id="historia" class="py-5 ">
                 <div class="container">
                     <h2 class="text-center audiowide-regular">Historia</h2><br>
                     <p class="text-center montserrat-parrafo " id="tamañoDeFuente">La historia de las redes neuronales tiene sus raíces en los años 1940, cuando el neurofisiólogo Warren McCulloch y el matemático Walter Pitts desarrollaron el primer modelo matemático que simulaba una neurona artificial, conocido como la neurona de McCulloch-Pitts.<br><br> Este modelo era muy básico y no lograba capturar la complejidad de las redes neuronales biológicas, pero sentó las bases para investigaciones futuras.
@@ -67,7 +70,92 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/SV3gIFChXvg?si=Kg3Mh5eYN7HYVVwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                 </div>
+            </section>-->
+
+            <section id="historia" class="py-5">
+                <div class="container">
+                    <h2 class="text-center audiowide-regular">Historia</h2><br>
+                    <p class="text-center montserrat-parrafo" id="tamañoDeFuente">
+                        La historia de las redes neuronales tiene sus raíces en los años 1940, cuando el neurofisiólogo 
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalMcCullochPitts">Warren McCulloch y el matemático Walter Pitts</a> desarrollaron el primer modelo matemático que simulaba una neurona artificial, conocido como la neurona de McCulloch-Pitts.
+                        <br><br>Este modelo era muy básico y no lograba capturar la complejidad de las redes neuronales biológicas, pero sentó las bases para investigaciones futuras.
+                        <br><br>Durante las décadas de 1950 y 1960, se desarrollaron otros modelos importantes, <a href="#" data-bs-toggle="modal" data-bs-target="#modalRosenblatt">perceptrón de Frank Rosenblatt</a> en 1958, una red neuronal simple que podía aprender a clasificar patrones. Sin embargo, las limitaciones de estos primeros modelos, como la incapacidad del perceptrón para resolver problemas no lineales, llevaron a un periodo de desinterés en las redes neuronales conocido como el "invierno de la inteligencia artificial" en los años 1970.
+                        <br><br>La situación cambió en los años 1980, cuando<a href="#" data-bs-toggle="modal" data-bs-target="#modalRevive"> Geoffrey Hinton y otros investigadores reintrodujeron el concepto de retropropagación del error (backpropagation)</a>, una técnica que permitió entrenar redes neuronales con múltiples capas. Esto marcó el renacimiento del interés en las redes neuronales, llevando eventualmente al desarrollo del deep learning.
+                        <br><br>A partir del año 2006, se introdujeron las Deep Belief Networks (DBN) por Hinton, que demostraron que se podían entrenar redes profundas de manera efectiva. En 2014, las Generative Adversarial Networks (GAN),<a href="#" data-bs-toggle="modal" data-bs-target="#modalFleco">creadas por Ian Goodfellow</a>, marcaron otro avance significativo en la creación de modelos generativos.
+                        <br><br>En resumen, el desarrollo de las redes neuronales ha pasado por varias etapas, desde los primeros modelos matemáticos en los años 1940, hasta los modernos modelos de deep learning que se utilizan en la actualidad para aplicaciones avanzadas como la visión por computadora y el procesamiento de lenguaje natural.
+                    </p>
+            
+                    <h2 class="text-center audiowide-regular">Video para reforzar contenidos.</h2><br>
+                    <div class="video-container text-center mt-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SV3gIFChXvg?si=Kg3Mh5eYN7HYVVwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </section>
+            
+            <!-- Modal para Warren McCulloch y Walter Pitts -->
+            <div class="modal fade" id="modalMcCullochPitts" tabindex="-1" aria-labelledby="modalLabelMcCullochPitts" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabelMcCullochPitts">Warren McCulloch y Walter Pitts</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/los2locos.png" alt="Warren McCulloch y Walter Pitts" class="img-fluid">
+                            <p class="mt-2">Warren McCulloch (neurofisiólogo) y Walter Pitts (matemático) desarrollaron el primer modelo matemático de una neurona artificial en 1943.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Frank Rosenblatt -->
+            <div class="modal fade" id="modalRosenblatt" tabindex="-1" aria-labelledby="modalLabelRosenblatt" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabelRosenblatt">Frank Rosenblatt</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/unrequilombo.webp" alt="Frank Rosenblatt" class="img-fluid">
+                            <p class="mt-2">Frank Rosenblatt fue el creador del perceptrón, una red neuronal simple que podía aprender a clasificar patrones en 1958.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Revive -->
+            <div class="modal fade" id="modalRevive" tabindex="-1" aria-labelledby="modalLabelRevive" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabelRevive"> Geoffrey Hinton</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/revive.png" alt="Geoffrey Hinton" class="img-fluid">
+                            <p class="mt-2">Geoffrey Hinton y otros investigadores reintrodujeron el concepto de retropropagación del error (backpropagation).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Fleco -->
+            <div class="modal fade" id="modalFleco" tabindex="-1" aria-labelledby="modalLabelFleco" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabelFleco">Ian Goodfellow</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/fleco.png" alt="Goodfellow" class="img-fluid">
+                            <p class="mt-2"> En 2014, las Generative Adversarial Networks (GAN), creadas por Ian Goodfellow, marcaron otro avance significativo en la creación de modelos generativos..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <section id="entrenamiento" class="py-5 bg-black border border-1 border-white ">
                 <div class="container">
                     <h2 class="text-center audiowide-regular">Entrenamiento de una Red Neuronal</h2><br>
@@ -161,23 +249,26 @@
                 <br>
                 <div class="row text-center">
                     <div class="col-md-4 text-white d-flex flex-column align-items-center">
-                        <h3>Reconocimiento de Imágenes y Conducción Autónoma:</h3>
-                        <p>Las redes neuronales convolucionales son la base de muchos sistemas de reconocimiento facial, clasificación de imágenes médicas y análisis de videos. tambien es utilizado para la conduccion autonoma ya que permiten que los vehículos autónomos reconozcan y respondan a su entorno utilizan redes neuronales para interpretar datos visuales en tiempo real</p>
-                        <img src="img/reconocimientoimg.jpg" alt="reco" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
+                        <h3 class="text-center">Reconocimiento de Imágenes y Conducción Autónoma</h3>
+                        <p class="text-center">Las redes neuronales convolucionales son la base de muchos sistemas de reconocimiento facial, clasificación de imágenes médicas y análisis de videos. También es utilizado para la conducción autónoma ya que permiten que los vehículos autónomos reconozcan y respondan a su entorno, utilizan redes neuronales para interpretar datos visuales en tiempo real.</p>
+                        <img src="img/reconocimientoimg.jpg" alt="reco" class="img-fluid mt-3 img-equal-height img-fixed-size" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
                     <div class="col-md-4 text-white d-flex flex-column align-items-center">
-                        <h3>Algoritmos de Recomendación:</h3>
-                        <p>Plataformas como Netflix,Amazon,Spotify,etc utilizan redes neuronales para predecir las preferencias de los usuarios y recomendar contenido personalizado.</p>
-                        <img src="img/recomendacion.png" alt="recomen" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
+                        <h3 class="text-center">Algoritmos<br> de <br> Recomendación</h3>
+                        <p class="text-center">Plataformas como Netflix, Amazon, Spotify, etc. utilizan redes neuronales para predecir las preferencias de los usuarios y recomendar contenido personalizado.</p><br><br><br><br>
+                        <img src="img/recomendacion.png" alt="recomen" class="img-fluid mt-3 img-equal-height img-fixed-size" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
                     <div class="col-md-4 text-white d-flex flex-column align-items-center">
-                        <h3>Traducción automática Procesamiento del Lenguaje Natural (PLN):</h3>
-                        <p>Por medio del Procesamiento del Lenguaje Natural (PLN), las redes neuronales recurrentes y transformers han mejorado enormemente la traducción automática y los asistentes virtuales </p>
-                        <img src="img/traduccion.png" alt="tradu" class="img-fluid mt-3 img-equal-height" style="cursor: pointer;" onclick="openFullscreen(this);">
+                        <h3 class="text-center">Traducción automática Procesamiento del Lenguaje Natural (PLN)</h3>
+                        <p class="text-center">Por medio del Procesamiento del Lenguaje Natural (PLN), las redes neuronales recurrentes y transformers han mejorado enormemente la traducción automática y los asistentes virtuales.</p><br><br><br><br>
+                        <img src="img/traduccion.png" alt="tradu" class="img-fluid mt-3 img-equal-height img-fixed-size" style="cursor: pointer;" onclick="openFullscreen(this);">
                     </div>
                 </div>
             </div>
         </section>
+        
+
+
         <br><br>
         <!-- Modal para la primera imagen -->
         <div class="modal fade" id="modalImagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

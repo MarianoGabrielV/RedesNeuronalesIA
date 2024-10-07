@@ -348,6 +348,25 @@ header {
   object-fit: cover;
 }
 
+.img-fixed-size {
+  max-height: 200px;
+  max-width: 100%;
+  object-fit: cover; /* Mantiene el aspecto de la imagen */
+}
+
+h3, p {
+  text-align: center;
+}
+
+section .row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinea los elementos dentro de la columna */
+  height: 100%;
+}
+
+
+
 
 
 img:fullscreen {
