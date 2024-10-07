@@ -428,3 +428,11 @@ img:-moz-full-screen {
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid #00a3b9;}
 
+  @media (min-width: 768px) and (max-width: 1366px) {
+    .navbar a {
+      margin-left: -10px;
+  }
+  .logo {
+    width: 31%;
+}
+  }
